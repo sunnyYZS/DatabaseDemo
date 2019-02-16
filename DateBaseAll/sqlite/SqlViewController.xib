@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SqlViewController">
+            <connections>
+                <outlet property="AddBtn" destination="x7b-PN-Q7S" id="EIr-4M-8KC"/>
+                <outlet property="BackBtn" destination="Fhd-e0-3ZP" id="I9B-Hk-vLC"/>
+                <outlet property="SelectBtn" destination="vcZ-Ee-8rB" id="mwY-Mu-hkZ"/>
+                <outlet property="myTableView" destination="wI8-eP-pEG" id="Yf5-5Y-xjB"/>
+                <outlet property="view" destination="PbQ-xM-Jva" id="DEJ-Yt-XI2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PbQ-xM-Jva">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fhM-YP-9ND">
+                    <rect key="frame" x="24" y="51" width="31" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-e0-3ZP">
+                            <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                            <state key="normal" title="返回"/>
+                            <connections>
+                                <action selector="reBack:" destination="-1" eventType="touchUpInside" id="inM-L0-CoJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="AA2-LD-w6v"/>
+                        <constraint firstAttribute="height" constant="30" id="mcG-VY-ime"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7b-PN-Q7S">
+                    <rect key="frame" x="172" y="50" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="增"/>
+                    <connections>
+                        <action selector="addDate:" destination="-1" eventType="touchUpInside" id="eBp-mP-vH9"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wI8-eP-pEG">
+                    <rect key="frame" x="0.0" y="117" width="375" height="550"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zd0-fH-RQi"/>
+                        <outlet property="delegate" destination="-1" id="DqF-jV-ROp"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcZ-Ee-8rB">
+                    <rect key="frame" x="294" y="51" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="查"/>
+                    <connections>
+                        <action selector="selectDate:" destination="-1" eventType="touchUpInside" id="n0y-2z-YII"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wI8-eP-pEG" firstAttribute="bottom" secondItem="ffe-9u-e89" secondAttribute="bottom" id="Bpu-XH-P7G"/>
+                <constraint firstItem="fhM-YP-9ND" firstAttribute="leading" secondItem="ffe-9u-e89" secondAttribute="leading" constant="24" id="Bx9-79-hyU"/>
+                <constraint firstItem="fhM-YP-9ND" firstAttribute="top" secondItem="ffe-9u-e89" secondAttribute="top" constant="31" id="P2w-Cp-O5H"/>
+                <constraint firstItem="wI8-eP-pEG" firstAttribute="trailing" secondItem="ffe-9u-e89" secondAttribute="trailing" id="UUj-Kg-7Px"/>
+                <constraint firstItem="wI8-eP-pEG" firstAttribute="leading" secondItem="ffe-9u-e89" secondAttribute="leading" id="aZ3-gg-lfd"/>
+                <constraint firstItem="wI8-eP-pEG" firstAttribute="top" secondItem="fhM-YP-9ND" secondAttribute="bottom" constant="36" id="n03-8F-EYm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ffe-9u-e89"/>
+            <point key="canvasLocation" x="-1190.5" y="-996.5"/>
+        </view>
+    </objects>
+</document>

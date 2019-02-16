@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA3F5E81215E6C770044567C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3F5E78215E6C770044567C /* FMResultSet.m */; };
+		EA3F5E82215E6C770044567C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3F5E79215E6C770044567C /* FMDatabaseAdditions.m */; };
+		EA3F5E83215E6C770044567C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3F5E7A215E6C770044567C /* FMDatabaseQueue.m */; };
+		EA3F5E84215E6C770044567C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3F5E7B215E6C770044567C /* FMDatabase.m */; };
+		EA3F5E85215E6C770044567C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3F5E7C215E6C770044567C /* FMDatabasePool.m */; };
+		EA3F5E89215E71B40044567C /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3F5E88215E71B40044567C /* Worker.m */; };
+		EA42550D215D336C00CEF9B8 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA42550C215D336C00CEF9B8 /* FMDBManager.m */; };
+		EA425511215D338400CEF9B8 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA42550F215D338400CEF9B8 /* FMDBViewController.m */; };
+		EA425512215D338400CEF9B8 /* FMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA425510215D338400CEF9B8 /* FMDBViewController.xib */; };
+		EABB92DE21513E0800E7E77B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB92DD21513E0800E7E77B /* AppDelegate.m */; };
+		EABB92E121513E0800E7E77B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB92E021513E0800E7E77B /* ViewController.m */; };
+		EABB92E421513E0900E7E77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABB92E221513E0900E7E77B /* Main.storyboard */; };
+		EABB92E721513E0900E7E77B /* DateBaseAll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EABB92E521513E0900E7E77B /* DateBaseAll.xcdatamodeld */; };
+		EABB92E921513E0900E7E77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EABB92E821513E0900E7E77B /* Assets.xcassets */; };
+		EABB92EC21513E0900E7E77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EABB92EA21513E0900E7E77B /* LaunchScreen.storyboard */; };
+		EABB92EF21513E0900E7E77B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB92EE21513E0900E7E77B /* main.m */; };
+		EABB92F921513E0A00E7E77B /* DateBaseAllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB92F821513E0A00E7E77B /* DateBaseAllTests.m */; };
+		EABB930421513E0A00E7E77B /* DateBaseAllUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB930321513E0A00E7E77B /* DateBaseAllUITests.m */; };
+		EABB931321513E1B00E7E77B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EABB931221513E1B00E7E77B /* libsqlite3.0.tbd */; };
+		EABB931821513E3B00E7E77B /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB931721513E3B00E7E77B /* DataBaseManager.m */; };
+		EABB931B21513E4300E7E77B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB931A21513E4300E7E77B /* Student.m */; };
+		EABB93272151463300E7E77B /* Teacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB93252151463300E7E77B /* Teacher+CoreDataClass.m */; };
+		EABB93282151463300E7E77B /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = EABB93262151463300E7E77B /* Teacher+CoreDataProperties.m */; };
+		EAE35CBD215A7A8600895DE8 /* SqlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE35CBC215A7A8600895DE8 /* SqlViewController.m */; };
+		EAE35CC0215A7A9A00895DE8 /* CoreDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE35CBF215A7A9A00895DE8 /* CoreDateViewController.m */; };
+		EAE35CC4215A7E8600895DE8 /* SqlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE35CC3215A7E8600895DE8 /* SqlViewController.xib */; };
+		EAE35CCB215A858C00895DE8 /* CoreDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE35CCA215A858C00895DE8 /* CoreDateViewController.xib */; };
+		EAE35CCE215A87FE00895DE8 /* CoreDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE35CCD215A87FE00895DE8 /* CoreDateManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EABB92F521513E0A00E7E77B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EABB92D121513E0800E7E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EABB92D821513E0800E7E77B;
+			remoteInfo = DateBaseAll;
+		};
+		EABB930021513E0A00E7E77B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EABB92D121513E0800E7E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EABB92D821513E0800E7E77B;
+			remoteInfo = DateBaseAll;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA3F5E77215E6C770044567C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		EA3F5E78215E6C770044567C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		EA3F5E79215E6C770044567C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		EA3F5E7A215E6C770044567C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		EA3F5E7B215E6C770044567C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		EA3F5E7C215E6C770044567C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		EA3F5E7D215E6C770044567C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		EA3F5E7E215E6C770044567C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		EA3F5E7F215E6C770044567C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		EA3F5E80215E6C770044567C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		EA3F5E86215E6F2C0044567C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		EA3F5E87215E71B40044567C /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
+		EA3F5E88215E71B40044567C /* Worker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
+		EA42550B215D336C00CEF9B8 /* FMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		EA42550C215D336C00CEF9B8 /* FMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		EA42550E215D338400CEF9B8 /* FMDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		EA42550F215D338400CEF9B8 /* FMDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		EA425510215D338400CEF9B8 /* FMDBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FMDBViewController.xib; sourceTree = "<group>"; };
+		EABB92D921513E0800E7E77B /* DateBaseAll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateBaseAll.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABB92DC21513E0800E7E77B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EABB92DD21513E0800E7E77B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EABB92DF21513E0800E7E77B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EABB92E021513E0800E7E77B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EABB92E321513E0900E7E77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EABB92E621513E0900E7E77B /* DateBaseAll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DateBaseAll.xcdatamodel; sourceTree = "<group>"; };
+		EABB92E821513E0900E7E77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EABB92EB21513E0900E7E77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EABB92ED21513E0900E7E77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABB92EE21513E0900E7E77B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EABB92F421513E0A00E7E77B /* DateBaseAllTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateBaseAllTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABB92F821513E0A00E7E77B /* DateBaseAllTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateBaseAllTests.m; sourceTree = "<group>"; };
+		EABB92FA21513E0A00E7E77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABB92FF21513E0A00E7E77B /* DateBaseAllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateBaseAllUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EABB930321513E0A00E7E77B /* DateBaseAllUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateBaseAllUITests.m; sourceTree = "<group>"; };
+		EABB930521513E0A00E7E77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABB931221513E1B00E7E77B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		EABB931621513E3A00E7E77B /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
+		EABB931721513E3B00E7E77B /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
+		EABB931921513E4200E7E77B /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		EABB931A21513E4300E7E77B /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		EABB93232151463300E7E77B /* Teacher+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		EABB93242151463300E7E77B /* Teacher+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataClass.h"; sourceTree = "<group>"; };
+		EABB93252151463300E7E77B /* Teacher+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataClass.m"; sourceTree = "<group>"; };
+		EABB93262151463300E7E77B /* Teacher+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataProperties.m"; sourceTree = "<group>"; };
+		EAE35CBB215A7A8600895DE8 /* SqlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlViewController.h; sourceTree = "<group>"; };
+		EAE35CBC215A7A8600895DE8 /* SqlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlViewController.m; sourceTree = "<group>"; };
+		EAE35CBE215A7A9A00895DE8 /* CoreDateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDateViewController.h; sourceTree = "<group>"; };
+		EAE35CBF215A7A9A00895DE8 /* CoreDateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDateViewController.m; sourceTree = "<group>"; };
+		EAE35CC3215A7E8600895DE8 /* SqlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SqlViewController.xib; sourceTree = "<group>"; };
+		EAE35CCA215A858C00895DE8 /* CoreDateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreDateViewController.xib; sourceTree = "<group>"; };
+		EAE35CCC215A87FE00895DE8 /* CoreDateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDateManager.h; sourceTree = "<group>"; };
+		EAE35CCD215A87FE00895DE8 /* CoreDateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDateManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EABB92D621513E0800E7E77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABB931321513E1B00E7E77B /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB92F121513E0A00E7E77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB92FC21513E0A00E7E77B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA3F5E76215E6C5A0044567C /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				EA3F5E86215E6F2C0044567C /* FMDB.h */,
+				EA3F5E7D215E6C770044567C /* FMDatabase.h */,
+				EA3F5E7B215E6C770044567C /* FMDatabase.m */,
+				EA3F5E7E215E6C770044567C /* FMResultSet.h */,
+				EA3F5E78215E6C770044567C /* FMResultSet.m */,
+				EA3F5E77215E6C770044567C /* FMDatabaseQueue.h */,
+				EA3F5E7A215E6C770044567C /* FMDatabaseQueue.m */,
+				EA3F5E80215E6C770044567C /* FMDatabaseAdditions.h */,
+				EA3F5E79215E6C770044567C /* FMDatabaseAdditions.m */,
+				EA3F5E7F215E6C770044567C /* FMDatabasePool.h */,
+				EA3F5E7C215E6C770044567C /* FMDatabasePool.m */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+		EA42550A215D334600CEF9B8 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				EA3F5E76215E6C5A0044567C /* fmdb */,
+				EA42550B215D336C00CEF9B8 /* FMDBManager.h */,
+				EA42550C215D336C00CEF9B8 /* FMDBManager.m */,
+				EA42550E215D338400CEF9B8 /* FMDBViewController.h */,
+				EA42550F215D338400CEF9B8 /* FMDBViewController.m */,
+				EA425510215D338400CEF9B8 /* FMDBViewController.xib */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		EABB92D021513E0800E7E77B = {
+			isa = PBXGroup;
+			children = (
+				EABB93232151463300E7E77B /* Teacher+CoreDataProperties.h */,
+				EABB93242151463300E7E77B /* Teacher+CoreDataClass.h */,
+				EABB93252151463300E7E77B /* Teacher+CoreDataClass.m */,
+				EABB93262151463300E7E77B /* Teacher+CoreDataProperties.m */,
+				EABB92DB21513E0800E7E77B /* DateBaseAll */,
+				EABB92F721513E0A00E7E77B /* DateBaseAllTests */,
+				EABB930221513E0A00E7E77B /* DateBaseAllUITests */,
+				EABB92DA21513E0800E7E77B /* Products */,
+				EABB931121513E1A00E7E77B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EABB92DA21513E0800E7E77B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EABB92D921513E0800E7E77B /* DateBaseAll.app */,
+				EABB92F421513E0A00E7E77B /* DateBaseAllTests.xctest */,
+				EABB92FF21513E0A00E7E77B /* DateBaseAllUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EABB92DB21513E0800E7E77B /* DateBaseAll */ = {
+			isa = PBXGroup;
+			children = (
+				EA42550A215D334600CEF9B8 /* FMDB */,
+				EABB931C21513EFF00E7E77B /* coredate */,
+				EABB931521513E2D00E7E77B /* sqlite */,
+				EABB931421513E2600E7E77B /* Model */,
+				EABB92DC21513E0800E7E77B /* AppDelegate.h */,
+				EABB92DD21513E0800E7E77B /* AppDelegate.m */,
+				EABB92DF21513E0800E7E77B /* ViewController.h */,
+				EABB92E021513E0800E7E77B /* ViewController.m */,
+				EABB92E221513E0900E7E77B /* Main.storyboard */,
+				EABB92E821513E0900E7E77B /* Assets.xcassets */,
+				EABB92EA21513E0900E7E77B /* LaunchScreen.storyboard */,
+				EABB92ED21513E0900E7E77B /* Info.plist */,
+				EABB92EE21513E0900E7E77B /* main.m */,
+				EABB92E521513E0900E7E77B /* DateBaseAll.xcdatamodeld */,
+			);
+			path = DateBaseAll;
+			sourceTree = "<group>";
+		};
+		EABB92F721513E0A00E7E77B /* DateBaseAllTests */ = {
+			isa = PBXGroup;
+			children = (
+				EABB92F821513E0A00E7E77B /* DateBaseAllTests.m */,
+				EABB92FA21513E0A00E7E77B /* Info.plist */,
+			);
+			path = DateBaseAllTests;
+			sourceTree = "<group>";
+		};
+		EABB930221513E0A00E7E77B /* DateBaseAllUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EABB930321513E0A00E7E77B /* DateBaseAllUITests.m */,
+				EABB930521513E0A00E7E77B /* Info.plist */,
+			);
+			path = DateBaseAllUITests;
+			sourceTree = "<group>";
+		};
+		EABB931121513E1A00E7E77B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EABB931221513E1B00E7E77B /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EABB931421513E2600E7E77B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EABB931921513E4200E7E77B /* Student.h */,
+				EABB931A21513E4300E7E77B /* Student.m */,
+				EA3F5E87215E71B40044567C /* Worker.h */,
+				EA3F5E88215E71B40044567C /* Worker.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EABB931521513E2D00E7E77B /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				EABB931621513E3A00E7E77B /* DataBaseManager.h */,
+				EABB931721513E3B00E7E77B /* DataBaseManager.m */,
+				EAE35CBB215A7A8600895DE8 /* SqlViewController.h */,
+				EAE35CBC215A7A8600895DE8 /* SqlViewController.m */,
+				EAE35CC3215A7E8600895DE8 /* SqlViewController.xib */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		EABB931C21513EFF00E7E77B /* coredate */ = {
+			isa = PBXGroup;
+			children = (
+				EAE35CCC215A87FE00895DE8 /* CoreDateManager.h */,
+				EAE35CCD215A87FE00895DE8 /* CoreDateManager.m */,
+				EAE35CBE215A7A9A00895DE8 /* CoreDateViewController.h */,
+				EAE35CBF215A7A9A00895DE8 /* CoreDateViewController.m */,
+				EAE35CCA215A858C00895DE8 /* CoreDateViewController.xib */,
+			);
+			path = coredate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EABB92D821513E0800E7E77B /* DateBaseAll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABB930821513E0A00E7E77B /* Build configuration list for PBXNativeTarget "DateBaseAll" */;
+			buildPhases = (
+				EABB92D521513E0800E7E77B /* Sources */,
+				EABB92D621513E0800E7E77B /* Frameworks */,
+				EABB92D721513E0800E7E77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DateBaseAll;
+			productName = DateBaseAll;
+			productReference = EABB92D921513E0800E7E77B /* DateBaseAll.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EABB92F321513E0A00E7E77B /* DateBaseAllTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABB930B21513E0A00E7E77B /* Build configuration list for PBXNativeTarget "DateBaseAllTests" */;
+			buildPhases = (
+				EABB92F021513E0A00E7E77B /* Sources */,
+				EABB92F121513E0A00E7E77B /* Frameworks */,
+				EABB92F221513E0A00E7E77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EABB92F621513E0A00E7E77B /* PBXTargetDependency */,
+			);
+			name = DateBaseAllTests;
+			productName = DateBaseAllTests;
+			productReference = EABB92F421513E0A00E7E77B /* DateBaseAllTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EABB92FE21513E0A00E7E77B /* DateBaseAllUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EABB930E21513E0A00E7E77B /* Build configuration list for PBXNativeTarget "DateBaseAllUITests" */;
+			buildPhases = (
+				EABB92FB21513E0A00E7E77B /* Sources */,
+				EABB92FC21513E0A00E7E77B /* Frameworks */,
+				EABB92FD21513E0A00E7E77B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EABB930121513E0A00E7E77B /* PBXTargetDependency */,
+			);
+			name = DateBaseAllUITests;
+			productName = DateBaseAllUITests;
+			productReference = EABB92FF21513E0A00E7E77B /* DateBaseAllUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EABB92D121513E0800E7E77B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					EABB92D821513E0800E7E77B = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EABB92F321513E0A00E7E77B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EABB92D821513E0800E7E77B;
+					};
+					EABB92FE21513E0A00E7E77B = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EABB92D821513E0800E7E77B;
+					};
+				};
+			};
+			buildConfigurationList = EABB92D421513E0800E7E77B /* Build configuration list for PBXProject "DateBaseAll" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EABB92D021513E0800E7E77B;
+			productRefGroup = EABB92DA21513E0800E7E77B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EABB92D821513E0800E7E77B /* DateBaseAll */,
+				EABB92F321513E0A00E7E77B /* DateBaseAllTests */,
+				EABB92FE21513E0A00E7E77B /* DateBaseAllUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EABB92D721513E0800E7E77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABB92EC21513E0900E7E77B /* LaunchScreen.storyboard in Resources */,
+				EAE35CC4215A7E8600895DE8 /* SqlViewController.xib in Resources */,
+				EAE35CCB215A858C00895DE8 /* CoreDateViewController.xib in Resources */,
+				EA425512215D338400CEF9B8 /* FMDBViewController.xib in Resources */,
+				EABB92E921513E0900E7E77B /* Assets.xcassets in Resources */,
+				EABB92E421513E0900E7E77B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB92F221513E0A00E7E77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB92FD21513E0A00E7E77B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EABB92D521513E0800E7E77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAE35CCE215A87FE00895DE8 /* CoreDateManager.m in Sources */,
+				EABB92E121513E0800E7E77B /* ViewController.m in Sources */,
+				EA3F5E81215E6C770044567C /* FMResultSet.m in Sources */,
+				EABB92DE21513E0800E7E77B /* AppDelegate.m in Sources */,
+				EA3F5E84215E6C770044567C /* FMDatabase.m in Sources */,
+				EABB92EF21513E0900E7E77B /* main.m in Sources */,
+				EABB93272151463300E7E77B /* Teacher+CoreDataClass.m in Sources */,
+				EAE35CBD215A7A8600895DE8 /* SqlViewController.m in Sources */,
+				EABB92E721513E0900E7E77B /* DateBaseAll.xcdatamodeld in Sources */,
+				EA3F5E89215E71B40044567C /* Worker.m in Sources */,
+				EABB931821513E3B00E7E77B /* DataBaseManager.m in Sources */,
+				EA3F5E83215E6C770044567C /* FMDatabaseQueue.m in Sources */,
+				EA42550D215D336C00CEF9B8 /* FMDBManager.m in Sources */,
+				EA425511215D338400CEF9B8 /* FMDBViewController.m in Sources */,
+				EA3F5E85215E6C770044567C /* FMDatabasePool.m in Sources */,
+				EABB93282151463300E7E77B /* Teacher+CoreDataProperties.m in Sources */,
+				EABB931B21513E4300E7E77B /* Student.m in Sources */,
+				EAE35CC0215A7A9A00895DE8 /* CoreDateViewController.m in Sources */,
+				EA3F5E82215E6C770044567C /* FMDatabaseAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB92F021513E0A00E7E77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABB92F921513E0A00E7E77B /* DateBaseAllTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABB92FB21513E0A00E7E77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EABB930421513E0A00E7E77B /* DateBaseAllUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EABB92F621513E0A00E7E77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EABB92D821513E0800E7E77B /* DateBaseAll */;
+			targetProxy = EABB92F521513E0A00E7E77B /* PBXContainerItemProxy */;
+		};
+		EABB930121513E0A00E7E77B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EABB92D821513E0800E7E77B /* DateBaseAll */;
+			targetProxy = EABB930021513E0A00E7E77B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EABB92E221513E0900E7E77B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABB92E321513E0900E7E77B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EABB92EA21513E0900E7E77B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EABB92EB21513E0900E7E77B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EABB930621513E0A00E7E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EABB930721513E0A00E7E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EABB930921513E0A00E7E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DateBaseAll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.animation.DateBaseAll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EABB930A21513E0A00E7E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DateBaseAll/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.animation.DateBaseAll;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EABB930C21513E0A00E7E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DateBaseAllTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.animation.DateBaseAllTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateBaseAll.app/DateBaseAll";
+			};
+			name = Debug;
+		};
+		EABB930D21513E0A00E7E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DateBaseAllTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.animation.DateBaseAllTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateBaseAll.app/DateBaseAll";
+			};
+			name = Release;
+		};
+		EABB930F21513E0A00E7E77B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DateBaseAllUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.animation.DateBaseAllUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DateBaseAll;
+			};
+			name = Debug;
+		};
+		EABB931021513E0A00E7E77B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DateBaseAllUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.animation.DateBaseAllUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DateBaseAll;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EABB92D421513E0800E7E77B /* Build configuration list for PBXProject "DateBaseAll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABB930621513E0A00E7E77B /* Debug */,
+				EABB930721513E0A00E7E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EABB930821513E0A00E7E77B /* Build configuration list for PBXNativeTarget "DateBaseAll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABB930921513E0A00E7E77B /* Debug */,
+				EABB930A21513E0A00E7E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EABB930B21513E0A00E7E77B /* Build configuration list for PBXNativeTarget "DateBaseAllTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABB930C21513E0A00E7E77B /* Debug */,
+				EABB930D21513E0A00E7E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EABB930E21513E0A00E7E77B /* Build configuration list for PBXNativeTarget "DateBaseAllUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EABB930F21513E0A00E7E77B /* Debug */,
+				EABB931021513E0A00E7E77B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EABB92E521513E0900E7E77B /* DateBaseAll.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EABB92E621513E0900E7E77B /* DateBaseAll.xcdatamodel */,
+			);
+			currentVersion = EABB92E621513E0900E7E77B /* DateBaseAll.xcdatamodel */;
+			path = DateBaseAll.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EABB92D121513E0800E7E77B /* Project object */;
+}
